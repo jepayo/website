@@ -1,0 +1,35 @@
+<%- include("partials/upper.ejs") %>
+
+      <!-- General Content -->
+
+      <div class="container-fluid g-0">
+        <div class="row">
+          <div class="col-2 offset-4">
+            <label id="rangeValLabel" for="rangeVal_id">Polyominos Order: 3</label>
+            <input type="range" class="form-range" min="1" max="10" step="1" value="3"
+                oninput="document.getElementById('rangeValLabel').innerHTML ='Polyominos Order: '+this.value;"
+                name="rangeVal_name" id="rangeVal_id">
+            </input>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-success" onclick="poly_main(Number(document.getElementById('rangeVal_id').value));this.blur()">Generate!</button>
+          </div>
+
+        </div>
+        <div class="row" id="parrilla">
+          
+        </div>
+      </div>
+
+      <!-- End content -->
+
+      
+      
+<%- include("partials/lower.ejs") %>
+
+      
+
+  <script src="js/jpo_polyominos.js" charset="utf-8"></script>
+
+</body>
+</html>

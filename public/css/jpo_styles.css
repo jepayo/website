@@ -1,0 +1,153 @@
+:root {
+    --block-height-width: 40;
+    --grid-cols: 10;
+    --grid-rows: 20;
+    --top-menu-height: 100;
+}
+
+/* html, body{overflow:hidden;} */
+  
+.the_grid{
+    display: grid;
+    grid-template-columns: 10px repeat(calc(var(--grid-cols)),calc(var(--block-height-width) * 1px)) 10px;
+    grid-template-rows: repeat(calc(var(--grid-rows)),calc(var(--block-height-width) * 1px)) 10px;
+    --pre-calcs1: calc(10px * 2);
+    --pre-calcs2: calc((var(--grid-cols) * var(--block-height-width)));
+    --pre-calcs3: var(--pre-calcs2) * 1px;
+    max-width: calc(var(--pre-calcs1) + var(--pre-calcs3));
+    margin: auto;
+}
+
+.sec_grid{
+    display: grid;
+    grid-template-columns: repeat(9,40px);
+    grid-template-rows: repeat(9,40px);
+    max-width: 360px;
+    margin: auto;
+    /* background-color: aquamarine; */
+    border: #09c92f;
+    border-width: 3px;
+    border-style: dotted;
+    transition: 0.4s;
+    position:relative;
+}
+
+.a_grid{
+    display: grid;
+    grid-template-columns: repeat(5, 3vw);
+    grid-template-rows: repeat(5, 3vw);
+    justify-content: center;
+}
+
+.row {
+    margin: 0px !important;
+}
+body {
+    background-image: url("../img/bck_pattern.jpg");
+
+}
+
+.fichaeje {
+    visibility: hidden;
+}
+
+.ghosteje {
+    visibility: hidden;
+}
+
+.level_title {
+    font-family: 'Press Start 2P';
+    height: 90px;
+    background-color: rgb(58, 10, 178);
+    font-size: 30px;
+    margin: 5%;
+    color: #FEF2BF;
+}
+
+.bloque {
+    border: 1px dotted #ffffff;
+}
+.ficha {
+    border: 1px dotted #ffffff;
+}
+
+.ghost {
+    /* border: 4px solid #ccde07; */
+    visibility: hidden;
+}
+
+.ghostcheck{
+    border-color: #09c92f;
+    border: 3px solid #b51515;
+}
+
+#my_sidebar_left {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #b51515;
+    position: fixed;
+    left: -300px;
+    transition: 0.4s;
+}
+
+#my_sidebar_right.active {
+    left: 1000vh; 
+}
+
+#my_sidebar_left.active {
+    left: 0px; 
+}
+
+#my_sidebar_right {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #b51515;
+    position: fixed;
+    left: 100%;
+    transition: 0.4s;
+}
+
+#my_sidebar_right.active {
+    left: calc(100% - 300px); 
+}
+
+.sidebar_item {
+    padding:20px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.my_logo{
+    height: 80px;
+    padding: 20px;
+}
+
+.btn-toggle{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:10px;
+}
+
+.btn-toggle.left {
+    left: 310px;
+}
+
+.btn-toggle.right {
+    left: calc(calc(100% - 310px) - 50px);
+}
+
+.top-bar {
+    height: 60px;
+    width: 100%;
+    z-index: -1;
+}
+
+.top-bar.real {
+    background-color: #1b0992;
+    position: fixed;
+    color: #ffffff;
+}
