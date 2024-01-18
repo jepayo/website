@@ -2,7 +2,9 @@
 bloques_proc = [];
 order_num = 5;
 recur_search([[0,0]]);
-pintalos()
+// pintalos() 
+// No hay que pintar uno, sino que el algotimo deberia ser capaz de ir pintando cada paso.
+// Para ello, debe haber funciones que hagan resize the la grid, y pinten lo que haga falta.
 
 function pintalos(){
     let num = bloques_proc.length;
@@ -82,7 +84,7 @@ function pinta3(la_class="",losBloques=[]){ //nueva funcion tomando bloques json
     
         // $(".ficha").click(rota_ficha);
     
-        // check_vecinos_ficha();
+        // make_borders_ficha();
     }
 
 

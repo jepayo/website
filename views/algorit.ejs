@@ -4,20 +4,69 @@
 
 <%- //include("partials/simple_row_12_cols.ejs") %>
 
-<div class="row" style="height: 700px;">
-    <!-- <div class="col-lg-6 offset-lg-3 col-xl-8 offset-xl-2 col-xxl-10 offset-xxl-1 col-sm-12" style="padding:0; background-color: rgb(78, 78, 78);"> -->
-        <div class="sec_grid">
 
-        </div>
-    <!-- </div> -->
+<div class="row g-0">
+  <div class="offset-lg-2 col-lg-8 col-12" style="overflow-x:auto;height: 103px;">
+    <div id="pipeline" style="display: inline-flex;">
+      <!-- <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div>
+      <div class="mini_poly_grid"></div> -->
+    </div>
+  </div>
 </div>
+
+<div class="row">
+  <div class="offset-lg-2 col-lg-8 col-12" style="height: 500px;background-color: rgb(85, 0, 255);">
+    <div class="poly_grid">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="offset-lg-2 col-lg-8 col-12" style="background-color: red;overflow-x:auto;height: 100px;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="offset-lg-2 col-lg-8 col-12" style="background-color: rgb(0, 255, 38);height: 100px;">
+    <button type="button" class="btn btn-success" onclick="refresca_pipe('process');" style="width:100px; margin:10px">Start!</button>
+  </div>
+</div>
+
+
+<!-- <div class="row">
+    <div class="offset-lg-2 col-lg-2 col-3" style="background-color: red;overflow-y:auto;max-height: 700px;">
+      [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+    </div>
+    <div class="col-lg-6 col-9 g-0" style="background-color: green;">
+        <div class="container-fluid g-0">
+          <div class="row g-0" style="height: 500px;background-color: rgb(85, 0, 255);">
+            <div class="poly_grid">
+
+            </div>
+          </div>
+          <div class="row" style="background-color: rgb(0, 255, 38)">
+            <button type="button" class="btn btn-success" style="width:100px; margin:10px">Start!</button>
+          
+          </div>
+        </div>
+
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div> -->
 
 <!-- End content -->
 
 <%- include("partials/lower.ejs") %>
 
   <script src="js/jpo_polyominos.js" charset="utf-8"></script>
-  <script src="js/jpo_algorit.js" charset="utf-8"></script>
+  <!-- <script src="js/jpo_algorit.js" charset="utf-8"></script> -->
 
 </body>
 </html>
